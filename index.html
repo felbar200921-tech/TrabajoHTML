@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad 1: Reconociendo las etiquetas HTML</title>
+  <!-- <link>: vincula un archivo CSS externo (crea "estilos.css" junto a este archivo si lo quieres usar) -->
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 20px auto; padding: 0 16px; line-height: 1.5; }
+    .caja { border: 2px solid #2c6fbb; padding: 10px; margin: 10px 0; border-radius: 6px; }
+    .resaltado { background: yellow; }
+    table td, table th { padding: 6px 10px; }
+    h2 { margin-top: 30px; color: #2c6fbb; }
+  </style>
+</head>
+<body>
+
+  <h1>Actividad 1: Reconociendo las etiquetas HTML</h1>
+  <p>Esta página usa cada una de las etiquetas del cuadro del taller.</p>
+  <hr>
+
+  <h2>&lt;h1&gt; ... &lt;h6&gt; — Encabezados</h2>
+  <h1>Encabezado nivel 1</h1>
+  <h2>Encabezado nivel 2</h2>
+  <h3>Encabezado nivel 3</h3>
+  <h4>Encabezado nivel 4</h4>
+  <h5>Encabezado nivel 5</h5>
+  <h6>Encabezado nivel 6</h6>
+
+  <h2>&lt;p&gt;, &lt;br&gt;, &lt;hr&gt; — Párrafo, salto de línea y línea horizontal</h2>
+  <p>Este es un párrafo de texto.</p>
+  <p>Línea 1<br>Línea 2</p>
+  <hr>
+
+  <h2>&lt;strong&gt; y &lt;em&gt; — Negrita y cursiva</h2>
+  <p><strong>Texto en negrita</strong> y <em>Texto en cursiva</em></p>
+
+  <h2>&lt;div&gt; y &lt;span&gt; — Agrupar contenido</h2>
+  <div class="caja">Contenido dentro de un div</div>
+  <p>Texto normal con <span class="resaltado">texto resaltado</span> en línea.</p>
+
+  <h2>&lt;a&gt; — Enlace</h2>
+  <a href="https://www.w3schools.com" target="_blank">Visitar</a>
+
+  <h2>&lt;img&gt; — Imagen</h2>
+  <img src="foto.jpg" alt="Imagen de ejemplo" width="250" height="300">
+
+  <h2>Listas: &lt;ul&gt;, &lt;ol&gt; y &lt;li&gt;</h2>
+  <ul>
+    <li>Elemento 1</li>
+    <li>Elemento de lista</li>
+  </ul>
+  <ol type="1">
+    <li>Paso 1</li>
+    <li>Paso 2</li>
+  </ol>
+
+  <h2>Tabla: &lt;table&gt;, &lt;tr&gt;, &lt;th&gt; y &lt;td&gt;</h2>
+  <table border="1">
+    <tr>
+      <th>Encabezado</th>
+      <th>Otro encabezado</th>
+    </tr>
+    <tr>
+      <td>Celda 1</td>
+      <td>Dato</td>
+    </tr>
+    <tr>
+      <td colspan="2">Dato combinado</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Celda rowspan</td>
+      <td>Dato A</td>
+    </tr>
+    <tr>
+      <td>Dato B</td>
+    </tr>
+  </table>
+
+  <h2>Formulario: &lt;form&gt;, &lt;input&gt; y &lt;button&gt;</h2>
+  <form action="/enviar" method="post">
+    <input type="text" placeholder="Nombre">
+    <button type="submit">Enviar</button>
+  </form>
+
+  <h2>&lt;video&gt; — Video</h2>
+  <video src="video.mp4" controls width="400"></video>
+
+  <h2>&lt;audio&gt; — Audio</h2>
+  <audio src="audio.mp3" controls></audio>
+
+  <h2>&lt;iframe&gt; — Página incrustada</h2>
+  <iframe src="pagina.html" width="600" height="400"></iframe>
+
+  <!-- <script>: vincula código JavaScript (crea "script.js" junto a este archivo si lo quieres usar) -->
+  <script src="script.js"></script>
+</body>
+</html>
